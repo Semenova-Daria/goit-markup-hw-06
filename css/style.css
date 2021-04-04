@@ -361,6 +361,7 @@ button {
   padding-left: 16px;
 
   color: #ffffff;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 input[name="email"] {
@@ -398,6 +399,7 @@ input[name="email"] {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .subscribe-btn:hover,
@@ -1074,7 +1076,7 @@ border-radius: 4px;
 
   padding-left: 42px;
 
-  transition: border-color 250ms linear;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal-form-input:focus {
@@ -1164,13 +1166,11 @@ border-radius: 4px;
   cursor: pointer;
 }
 
-/* .modal-form-tern:focus + .modal-form-tern::before {
-  background-image: url("../images/icon-check.svg");
-  background-position: center;
-  cursor: pointer;
-  border: 1px solid var(--active-color);
+.modal-form-tern {
+  background: #212121;
   border-radius: 2px;
-} */
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
 
 .modal-form-tern:checked + .modal-form-check-desc::before {
   background-image: url("../images/icon-check.svg");
@@ -1184,12 +1184,6 @@ border-radius: 4px;
 box-shadow: 0 0 0 var(--accent-color);
 border: 1px solid var(--active-color);
 }
-
-.modal-form-tern {
-  background: #212121;
-  border-radius: 2px;
-}
-
 
 .modal-form-link {
   color: var(--active-color);
@@ -1215,6 +1209,8 @@ border: 1px solid var(--active-color);
   color: #ffffff;
   background: var(--active-color);
   outline: none;
+
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
